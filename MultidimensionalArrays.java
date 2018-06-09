@@ -82,7 +82,7 @@ public class MultidimensionalArrays {
     }
     public static void findLocalMin(int[][] ddarray){
         for ( int i = 1; i < ddarray.length - 1; i++) {
-            for (int j = 1; j < ddarray[i].length - 1; i++) {
+            for (int j = 1; j < ddarray[i].length - 1; j++) {
                 if (ddarray[i][j] < ddarray[i-1][j] && ddarray[i][j] < ddarray[i+1][j]
                         && ddarray[i][j] < ddarray[i][j-1] && ddarray[i][j] < ddarray[i][j+1]){
                     System.out.println(i + " " + j);
